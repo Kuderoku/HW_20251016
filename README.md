@@ -16,6 +16,12 @@
         echo "Файл '$searchedFile' найден."<br />
         else<br />
         echo "Файл '$searchedFile' не найден."<br />
-        fi<br />
-        ![ex_1_2](HW_1_2.PNG)<br /></b></i>
+        fi<br /></b></i>
+        ![ex_1_2](HW_1_2.PNG)<br />
     -  Использует цикл for для вывода информации о каждом файле: его имя и права доступа.
+        <b><i>for file in *; do<br />
+        if [ -f "$file" ]; then<br />
+        ls -l "$file"<br />
+        fi<br /></b></i>
+        ![ex_1_3](HW_1_3.PNG)<br />
+done
