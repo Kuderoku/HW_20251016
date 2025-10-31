@@ -121,9 +121,15 @@
     filename="input.txt"
 
     if [ -f "$filename" ]; then
-    wc -l $filename &>> "output.txt"
+        while read -r line
+            do
+                # Действия с каждой строкой, например, вывод
+                echo "$line"
+            done < "$filename"
+        wc -l $filename &>> "output.txt"
     else
-    ls $filename 2>> "error.log"
+        ls $filename 2>> "error.log"
     fi
     ```
+    ![ex_6](HW_6.PNG)
 

@@ -1,3 +1,5 @@
 4 input.txt
 4 input.txt
 6 input.txt
+6 input.txt
+6 input.txt
